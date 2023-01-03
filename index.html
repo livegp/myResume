@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--========== FAVICON ==========-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <!--========== BOX ICONS ==========-->
     <link
       rel="stylesheet"
@@ -31,13 +50,8 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#profile" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>Профіль
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#education" class="nav__link">
-                <i class="bx bx-book nav__icon"></i>Освіта
+              <a href="#languages" class="nav__link">
+                <i class="bx bx-user-voice nav__icon"></i>Мови
               </a>
             </li>
             <li class="nav__item">
@@ -46,18 +60,33 @@
               </a>
             </li>
             <li class="nav__item">
+              <a href="#interests" class="nav__link">
+                <i class="bx bx-landscape nav__icon"></i>Інтереси
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Про себе
+              </a>
+            </li>
+            <li class="nav__item">
               <a href="#experience" class="nav__link">
                 <i class="bx bx-briefcase-alt nav__icon"></i>Досвід
               </a>
             </li>
             <li class="nav__item">
-              <a href="#certificates" class="nav__link">
-                <i class="bx bx-award nav__icon"></i>Сертифікати
+              <a href="#education" class="nav__link">
+                <i class="bx bxs-graduation nav__icon"></i>Освіта
               </a>
             </li>
             <li class="nav__item">
-              <a href="#references" class="nav__link">
-                <i class="bx bx-link-external nav__icon"></i>Посилання
+              <a href="#courses" class="nav__link">
+                <i class="bx bx-edit nav__icon"></i>Курси
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Сертифікати
               </a>
             </li>
           </ul>
@@ -91,23 +120,24 @@
               </div>
               <div class="home__address bd-grid">
                 <span class="home__information">
-                  <i class="bx bx-map home__icon"></i>
                   <a
                     href="https://goo.gl/maps/K226a75fPeYMoFjHA"
                     class="home__link"
-                    >Україна, Запорізька обл., м.Гуляйполе</a
+                  >
+                    <i class="bx bx-map home__icon"></i>
+                    Україна, Запорізька обл., м.Гуляйполе</a
                   >
                 </span>
                 <span class="home__information">
-                  <i class="bx bx-envelope home__icon"></i>
-                  <a href="mailto:live.gp@gmail.com" class="home__link"
-                    >live.gp@gmail.com</a
+                  <a href="mailto:live.gp@gmail.com" class="home__link">
+                    <i class="bx bx-envelope home__icon"></i>
+                    live.gp@gmail.com</a
                   >
                 </span>
                 <span class="home__information">
-                  <i class="bx bx-phone home__icon"></i>
-                  <a href="tel:+380667867752" class="home__link"
-                    >+380 66 786 77 52</a
+                  <a href="tel:+380667867752" class="home__link">
+                    <i class="bx bx-phone home__icon"></i>
+                    +380 66 786 77 52</a
                   >
                 </span>
               </div>
@@ -126,7 +156,7 @@
             ></i>
           </section>
           <!--========== SOCIAL ==========-->
-          <section class="social section">
+          <section class="social section" id="social">
             <h2 class="section-title">МЕРЕЖА</h2>
             <div class="social__container bd-grid">
               <a
@@ -173,61 +203,24 @@
               </a>
             </div>
           </section>
-          <!--========== PROFILE ==========-->
-          <section class="profile section" id="profile">
-            <h2 class="section-title">Про себе</h2>
-            <p class="profile__description">
-              My name is Anna, I'm 28 years old. I was born and currently live
-              in Irkutsk. I'm living with my long-term boyfriend and our cat
-              Fluffy. I'm the head of marketing department in a local web
-              development company. Me and my boyfriend love traveling around
-              Russia, we've been to 20 cities so far. I'm an open and outgoing
-              person, and my friends say I'm a good conversationalist.
-            </p>
-          </section>
-          <!--========== EDUCATION ==========-->
-          <section class="education section" id="education">
-            <h2 class="section-title">Освіта</h2>
-            <div class="education__container bd-grid">
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Спеціаліст з фінансів</h3>
-                  <span class="education__studies"
-                    >Запорізька державна інженерна академія</span
-                  >
-                  <span class="education__year">2000 - 2005</span>
-                </div>
-              </div>
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Спеціаліст з фінансів</h3>
-                  <span class="education__studies"
-                    >Запорізька державна інженерна академія</span
-                  >
-                  <span class="education__year">2000 - 2005</span>
-                </div>
-              </div>
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <!-- <span class="education__line"></span> -->
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Спеціаліст з фінансів</h3>
-                  <span class="education__studies"
-                    >Запорізька державна інженерна академія</span
-                  >
-                  <span class="education__year">2000 - 2005</span>
-                </div>
-              </div>
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section" id="languages">
+            <h2 class="section-title">МОВИ</h2>
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Українська
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Російська
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Німецька
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Англійська
+                </li>
+              </ul>
             </div>
           </section>
           <!--========== SKILLS  ==========-->
@@ -241,19 +234,10 @@
                 <li class="skills__name">
                   <span class="skills__circle"></span> Css
                 </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Sass
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> JavaScript
-                </li>
               </ul>
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Angular
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Firebase
+                  <span class="skills__circle"></span> JavaScript
                 </li>
                 <li class="skills__name">
                   <span class="skills__circle"></span> React
@@ -261,8 +245,37 @@
               </ul>
             </div>
           </section>
+          <!--========== INTERESTS ==========-->
+          <section class="interests section" id="interests">
+            <h2 class="section-title">ІНТЕРЕСИ</h2>
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Музика</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-cycling interests__icon"></i>
+                <span class="interests__name">Вело</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-book interests__icon"></i>
+                <span class="interests__name">Право</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-dumbbell interests__icon"></i>
+                <span class="interests__name">Спорт</span>
+              </div>
+            </div>
+          </section>
         </div>
         <div class="resume__right">
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Про себе</h2>
+            <p class="profile__description">
+              Мене звати Олександр, мені 39 років
+            </p>
+          </section>
           <!--========== EXPERIENCE ==========-->
           <section class="experience section" id="experience">
             <h2 class="section-title">Досвід</h2>
@@ -273,15 +286,17 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">MASTER OF DESIGN</h3>
+                  <h3 class="experience__title">
+                    Провідний спеціаліст відділу з обслуговування клієнтів
+                  </h3>
                   <span class="experience__company"
-                    >2013 - 2015 | Tesh Soft</span
-                  >
+                    >2012 - До тепер | УДКСУ у Гуляйпільському районі
+                  </span>
                   <p class="experience__description">
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла
+                    Контроль з дотримання бюджетного законодавства, введення та
+                    взяття облік розписів, кошторисів, планів використання та
+                    змін до них, бюджетних та фінансових зобовязань, проведення
+                    видатків
                   </p>
                 </div>
               </div>
@@ -291,15 +306,29 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">MASTER OF DESIGN</h3>
+                  <h3 class="experience__title">Графічний дизайнер</h3>
                   <span class="experience__company"
-                    >2013 - 2015 | Tesh Soft</span
+                    >2010 - 2012 | ФОП Кубрак</span
                   >
                   <p class="experience__description">
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла
+                    Створення графічного дизайну памятників, та перенос
+                    зображення за допомогою станка на камінь
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Продавець - консультант</h3>
+                  <span class="experience__company"
+                    >2007 - 2009 | ФОП Міщенко</span
+                  >
+                  <p class="experience__description">
+                    Роздрібна торгівля побутової та комп'ютерної техніким,
+                    збирання та налаштування ПК
                   </p>
                 </div>
               </div>
@@ -309,16 +338,134 @@
                   <!-- <span class="experience__line"></span> -->
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">MASTER OF DESIGN</h3>
+                  <h3 class="experience__title">Менеджер РІПа</h3>
                   <span class="experience__company"
-                    >2013 - 2015 | Tesh Soft</span
+                    >2006 - 2008 | ПАТ КБ «Приватбанк»</span
                   >
                   <p class="experience__description">
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла Бла бла бла Бла бла бла
-                    Бла бла бла Бла бла бла Бла бла бла
+                    Оформлення споживчих кредитів
                   </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Освіта</h2>
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Спеціаліст з фінансів</h3>
+                  <span class="education__studies"
+                    >2000 - 2005 | Запорізька державна інженерна академія</span
+                  >
+                  <!-- <span class="education__year"></span> -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== COURSES ==========-->
+          <section class="courses section" id="courses">
+            <h2 class="section-title">КУРСИ</h2>
+            <div class="courses__container bd-grid">
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">Кандидат</h3>
+                  <span class="courses__company"
+                    >2020 | Дія.Цифрова освіта
+                  </span>
+                  <!-- <p class="courses__description">
+                  </p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Цифрова грамотність державних службовців 1.0. на базі
+                    інструментів Google
+                  </h3>
+                  <span class="courses__company"
+                    >2020 | Дія.Цифрова освіта</span
+                  >
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Ефективний бюджетний процес в органах місцевого
+                    самоврядування
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus </span>
+                  <!-- <p class="experience__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Психологія стресу та спосіб боротьби з ним
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Як ефективно спланувати та провести діалог
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Конфлікт інтересів: треба знати! Від теорії до практики
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <!-- <span class="courses__line"></span> -->
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Конфлікт інтересів: треба знати!
+                  </h3>
+                  <span class="courses__company">2018 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
                 </div>
               </div>
             </div>
@@ -329,80 +476,19 @@
             <div class="certificate__container bd-grid">
               <div class="certificate__content">
                 <h3 class="certificate__title">
-                  2020 - Дія.Цифрова освіта, сертифікат рівня середній В2
+                  Cертифікат рівня цифрової грамотності середній В2
                 </h3>
                 <p class="certificate__description">
-                  З тестування рівня цифрової грамотност
+                  2020 | Дія.Цифрова освіта
                 </p>
               </div>
               <div class="certificate__content">
                 <h3 class="certificate__title">
-                  2019 - Запорізький національний університет, посвідчення
+                  Посвідчення щодо вільного володіння державною мовою
                 </h3>
                 <p class="certificate__description">
-                  Щодо вільного володіння державною мовою
+                  2019 | Запорізький національний університет
                 </p>
-              </div>
-            </div>
-          </section>
-          <!--========== REFERENCES ==========-->
-          <section class="references section" id="references">
-            <h2 class="section-title">ПОСИЛАННЯ</h2>
-            <div class="references__container bd-grid">
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Sr.Director</span>
-                <h3 class="references__title">Mr. Clay Doe</h3>
-                <ul class="references__contact">
-                  <li>Phone: 999 999 99 99</li>
-                  <li>Email: qwerty@gmail.com</li>
-                </ul>
-              </div>
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Sr.Director</span>
-                <h3 class="references__title">Mr. Clay Doe</h3>
-                <ul class="references__contact">
-                  <li>Phone: 999 999 99 99</li>
-                  <li>Email: qwerty@gmail.com</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <!--========== LANGUAGES ==========-->
-          <section class="languages section">
-            <h2 class="section-title">МОВИ</h2>
-            <div class="languages__container">
-              <ul class="languages__content bd-grid">
-                <li class="languages__name">
-                  <span class="languages__circle"></span> Українська
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span> Російська
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span> Німецька
-                </li>
-              </ul>
-            </div>
-          </section>
-          <!--========== INTERESTS ==========-->
-          <section class="interests section">
-            <h2 class="section-title">ІНТЕРЕСИ</h2>
-            <div class="interests__container bd-grid">
-              <div class="interests__content">
-                <i class="bx bx-headphone interests__icon"></i>
-                <span class="interests__name">Музика</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bxs-plane-alt interests__icon"></i>
-                <span class="interests__name">Подорожі</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-book interests__icon"></i>
-                <span class="interests__name">Читання</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-dumbbell interests__icon"></i>
-                <span class="interests__name">Спорт</span>
               </div>
             </div>
           </section>
