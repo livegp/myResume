@@ -157,9 +157,9 @@ body.scale-cv {
 .scale-cv .courses__data {
   gap: 0.25rem;
 }
-.scale-cv .skills__name {
+/* .scale-cv .skills__name {
   margin-bottom: var(--mb-1);
-}
+} */
 /* .scale-cv .interests__container {
   column-gap: 2.5rem;
 } */
@@ -226,7 +226,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--container-color-alt);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
@@ -244,7 +244,8 @@ img {
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    background-color: var(--container-color-alt);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
@@ -454,6 +455,8 @@ img {
 .languages__name {
   display: flex;
   align-items: center;
+}
+.languages__name {
   margin-bottom: var(--mb-2);
 }
 .skills__circle,
@@ -465,13 +468,23 @@ img {
   border-radius: 50%;
   margin-right: 0.75rem;
 }
+.skills__full-line {
+  width: 95%;
+  height: 2px;
+  background: var(--body-color);
+  margin-bottom: var(--mb-2);
+}
+.skills__line {
+  height: 2px;
+  background: var(--text-color);
+}
 /*========== CERTIFICATES ==========*/
 .certificate__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
 /*========== REFERENCES ==========*/
-.references__content {
+/* .references__content {
   gap: 0.25rem;
 }
 .references__subtitle {
@@ -483,7 +496,7 @@ img {
 }
 .references__title {
   font-size: var(--h3-font-size);
-}
+} */
 /*========== INTERESTS ==========*/
 .interests__container {
   grid-template-columns: repeat(2, 1fr);
@@ -518,6 +531,11 @@ img {
   bottom: 5rem;
 }
 /*========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 968px) {
+  body {
+    background-color: var(--container-color-alt);
+  }
+}
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px) {
   .nav__list {
