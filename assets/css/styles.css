@@ -473,10 +473,12 @@ img {
   height: 2px;
   background: var(--body-color);
   margin-bottom: var(--mb-2);
+  border-radius: 5px;
 }
 .skills__line {
   height: 2px;
   background: var(--text-color);
+  border-radius: 5px;
 }
 /*========== CERTIFICATES ==========*/
 .certificate__title {
