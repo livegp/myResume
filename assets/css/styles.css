@@ -75,7 +75,6 @@ body.scale-cv {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-
 /*========== Generate PDF button ==========*/
 .generate-pdf {
   display: none;
@@ -302,6 +301,9 @@ img {
   gap: 0.5rem;
   text-align: center;
 }
+.home__section {
+  height: 200px;
+}
 .home__a {
   display: inline-block;
 }
@@ -312,21 +314,26 @@ img {
   justify-self: center;
   margin-bottom: var(--mb-1);
 }
-.home__modal {
-  display: none;
+.home__img[tabindex="0"]:focus {
   position: fixed;
-  left: 0;
+  z-index: 10;
   top: 0;
-  right: 0;
+  left: 0;
   bottom: 0;
-  padding: 8%;
-  background: rgba(0, 0, 0, 0.5) center no-repeat;
-  background-size: contain;
-  background-origin: content-box;
-  z-index: 1;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 100vh rgba(0, 0, 0, 0.5);
+  border-radius: 0%;
+  transition: 0.1s;
 }
-.home__modal:target {
-  display: block;
+.home__img[tabindex="0"]:focus,
+.home__img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
 }
 .home__title {
   font-size: var(--h1-font-size);
@@ -345,6 +352,10 @@ img {
 .home__icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
+}
+.icon {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
 }
 .home__link {
   display: inline-flex;
