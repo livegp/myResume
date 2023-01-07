@@ -12,7 +12,6 @@ const showMenu = (toggleId, navId) => {
   }
 };
 showMenu("nav-toggle", "nav-menu");
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav__link");
 
@@ -22,17 +21,18 @@ function linkAction() {
   navMenu.classList.remove("show-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+// Бургер
+document.querySelector(".nav__btn").addEventListener("click", function () {
+  document.querySelector(".burger").classList.toggle("active");
+});
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
-
 function scrollActive() {
   const scrollY = window.pageYOffset;
-
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute("id");
-
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
@@ -57,17 +57,14 @@ window.addEventListener("scroll", scrollTop);
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-sun";
-
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
-
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
-
 // We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
@@ -78,7 +75,6 @@ if (selectedTheme) {
     iconTheme
   );
 }
-
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
   // Add or remove the dark / icon theme
