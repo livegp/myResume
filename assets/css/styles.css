@@ -59,15 +59,6 @@ body.dark-theme {
 .chenge-theme:hover {
   color: var(--title-color);
 }
-/*========== Font size variables to scale cv ==========*/
-body.scale-cv {
-  --h1-font-size: 0.938rem;
-  --h2-font-size: 0.938rem;
-  --h3-font-size: 0.875rem;
-  --normal-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
-  --smaller-font-size: 0.688rem;
-}
 /* Download button*/
 .home__button {
   font-size: 1.2rem;
@@ -87,106 +78,6 @@ body.scale-cv {
 }
 .generate-pdf:hover {
   color: var(--title-color);
-}
-/*========== Classes modified to reduce size and print on A4 sheet ==========*/
-.scale-cv .chenge-theme,
-.scale-cv .generate-pdf {
-  display: none;
-}
-.scale-cv .bd-container {
-  max-width: 595px;
-}
-.scale-cv .section {
-  padding: 0.75rem 0 0rem;
-}
-.scale-cv .section-title {
-  margin-bottom: 0.75rem;
-}
-.scale-cv .resume__left,
-.scale-cv .resume__right {
-  padding: 0 1rem;
-}
-.scale-cv .home__img {
-  width: 90px;
-  height: 90px;
-}
-.scale-cv .home__container {
-  gap: 1.5rem;
-}
-.scale-cv .home__data {
-  gap: 0.25rem;
-}
-.scale-cv .home__address,
-.scale-cv .social__container,
-.scale-cv .interests__container,
-.scale-cv .languages__content,
-.scale-cv .skills__content,
-.scale-cv .education__container,
-.scale-cv .experience__container,
-.scale-cv .courses__container,
-.scale-cv .certificate__container {
-  gap: 0.7rem;
-}
-.scale-cv .home__icon,
-.scale-cv .social__icon,
-.scale-cv .interests__icon {
-  font-size: 1rem;
-}
-.scale-cv .education__time,
-.scale-cv .experience__time,
-.scale-cv .courses__time {
-  padding-right: 0.5rem;
-}
-.scale-cv .education__rounder,
-.scale-cv .experience__rounder,
-.scale-cv .courses__rounder {
-  width: 11px;
-  height: 11px;
-  margin-top: 0.22rem;
-}
-.scale-cv .education__line,
-.scale-cv .experience__line,
-.scale-cv .courses__line {
-  width: 1px;
-  height: 110%;
-  transform: translate(5px, 0);
-}
-.scale-cv .education__data,
-.scale-cv .experience__data,
-.scale-cv .courses__data {
-  gap: 0.25rem;
-}
-body {
-  margin: 0 0 var(--header-height) 0;
-  padding: 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-}
-h1,
-h2,
-h3,
-ul,
-p {
-  margin: 0;
-}
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
-ul {
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-  height: auto;
 }
 /*========== CLASS CSS ==========*/
 .section {
@@ -222,28 +113,27 @@ img {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
+/*========== Dovnload PDF button ==========*/
+.home__button-movil {
+  display: inline-block;
+  border: 2px solid var(--text-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  font-weight: var(--font-medium);
+  margin-top: var(--mb-3);
+}
+.home__button-movil:hover {
+  background-color: var(--text-color);
+  color: var(--container-color);
+}
 /*========== NAV ==========*/
 .nav {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media screen and (max-width: 968px) {
-  .nav__menu {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    padding: 2rem 1.5rem;
-    /* background-color: var(--body-color); */
-    background-color: var(--container-color-alt);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem 1rem 0 0;
-    z-index: var(--z-fixed);
-    transition: 0.3s;
-  }
 }
 .nav__logo,
 .nav__toggle {
@@ -303,7 +193,6 @@ img {
   height: 200px;
   border-radius: 50%;
   justify-self: center;
-  margin-bottom: var(--mb-1);
 }
 .home__img[tabindex="0"]:focus {
   position: fixed;
@@ -357,20 +246,9 @@ img {
 .home__link:hover {
   color: var(--title-color);
 }
-/*========== Dovnload PDF button ==========*/
-.home__button-movil {
-  display: inline-block;
-  border: 2px solid var(--text-color);
-  color: var(--title-color);
-  padding: 1rem 2rem;
-  border-radius: 0.25rem;
-  transition: 0.3s;
-  font-weight: var(--font-medium);
-  margin-top: var(--mb-3);
-}
-.home__button-movil:hover {
-  background-color: var(--text-color);
-  color: var(--container-color);
+/*========== PROFILE ==========*/
+.profile__description {
+  text-align: center;
 }
 /*========== SOCIAL AND INTERESTS==========*/
 .social__container,
@@ -393,63 +271,9 @@ img {
   margin-right: 0.5rem;
   vertical-align: top;
 }
-/*========== PROFILE ==========*/
-.profile__description {
-  text-align: center;
-}
-/*========== EDUCATION AND EXPERIENCE AND COURSES==========*/
-.education__content,
-.experience__content,
-.courses__content {
-  display: flex;
-}
-.education__time,
-.experience__time,
-.courses__time {
-  padding-right: 1rem;
-}
-.education__rounder,
-.experience__rounder,
-.courses__rounder {
-  position: relative;
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-color: var(--text-color-light);
-  border-radius: 50%;
-  margin-top: 0.25rem;
-}
-.education__line,
-.experience__line,
-.courses__line {
-  display: block;
-  width: 2px;
-  height: 110%;
-  background-color: var(--text-color);
-  transform: translate(7px, 0);
-}
-.education__data,
-.experience__data,
-.courses__data {
-  gap: 0.5rem;
-}
-.education__title,
-.experience__title,
-.courses__title {
-  font-size: var(--h3-font-size);
-}
-.education__studies,
-.experience__company,
-.courses__company {
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-}
-.education__year {
-  font-size: var(--smaller-font-size);
-}
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,
-.languages__content {
+.skills__container,
+.languages__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
@@ -465,23 +289,79 @@ img {
   height: 5px;
   background-color: var(--text-color);
   border-radius: 50%;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
   margin-bottom: 0.2rem;
 }
-.skills__progress,
-.languages__progress {
-  display: block;
-  border-radius: 5px;
+.skills__f-line,
+.languages__f-line {
+  display: flex;
   width: 100%;
   height: 2px;
-}
-::-webkit-progress-bar {
   background: var(--body-color);
+  border-radius: 5px;
 }
-::-webkit-progress-value {
+.skills__line,
+.languages__line {
+  height: 2px;
   background: var(--text-color);
+  border-radius: 5px;
 }
-/*========== CERTIFICATES ==========*/
+/*========== EDUCATION - EXPERIENCE - COURSES - CERTIFICATES ==========*/
+.education__content,
+.experience__content,
+.courses__content,
+.certificate__content {
+  display: flex;
+}
+.education__time,
+.experience__time,
+.courses__time,
+.certificate__time {
+  padding-right: 1rem;
+}
+.education__rounder,
+.experience__rounder,
+.courses__rounder,
+.certificate__rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-color-light);
+  border-radius: 50%;
+  margin-top: 0.1rem;
+}
+.education__line,
+.experience__line,
+.courses__line,
+.certificate__line {
+  display: block;
+  width: 2px;
+  height: 110%;
+  background-color: var(--text-color);
+  transform: translate(7px, 0);
+}
+.education__data,
+.experience__data,
+.courses__data,
+.certificate__data {
+  gap: 0.5rem;
+}
+.education__title,
+.experience__title,
+.courses__title,
+.courses__title {
+  font-size: var(--h3-font-size);
+}
+.education__company,
+.experience__company,
+.courses__company {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+.education__year {
+  font-size: var(--smaller-font-size);
+}
 .certificate__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
@@ -509,76 +389,92 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
-/*========== MEDIA QUERIES ==========*/
-/* For small devices, menu two columns */
-@media screen and (max-width: 320px) {
-  .nav__list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 0.5rem;
-  }
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .chenge-theme,
+.scale-cv .generate-pdf {
+  display: none;
 }
-@media screen and (min-width: 500px) and (max-width: 967px) {
-  .social__container,
-  .interests__container {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-  .skills__content,
-  .languages__content {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
+.scale-cv .bd-container {
+  max-width: 595px;
 }
-
-@media screen and (max-width: 968px) {
-  body {
-    background-color: var(--container-color-alt);
-  }
+.scale-cv .section {
+  padding: 0.75rem 0 0rem;
 }
-/* Classes modified for large screen size */
-@media screen and (min-width: 968px) {
-  body {
-    margin: 3rem 0;
-  }
-  .bd-container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .l-header,
-  .scrolltop {
-    display: none;
-  }
-  .resume {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
-  }
-  .resume__left {
-    background-color: var(--container-color-alt);
-  }
-  .resume__left,
-  .resume__right {
-    padding: 0 1.5rem;
-  }
-  .generate-pdf {
-    display: inline-block;
-  }
-  .section-title,
-  .profile__description {
-    text-align: initial;
-  }
-  .home__container {
-    gap: 1.5rem;
-  }
-  .home__button-movil {
-    display: none;
-  }
-  .references__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.scale-cv .section-title {
+  margin-bottom: 0.75rem;
 }
-/*=== Бургер меню ===*/
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  padding: 0 1rem;
+}
+.scale-cv .home__img {
+  width: 100px;
+  height: 100px;
+}
+.scale-cv .home__container {
+  gap: 1.5rem;
+}
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+.scale-cv .home__address,
+.scale-cv .social__container,
+.scale-cv .interests__container,
+.scale-cv .languages__container,
+.scale-cv .skills__container,
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .courses__container,
+.scale-cv .certificate__container {
+  gap: 0.7rem;
+}
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon {
+  font-size: 1rem;
+}
+.scale-cv .education__time,
+.scale-cv .experience__time,
+.scale-cv .courses__time {
+  padding-right: 0.5rem;
+}
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder,
+.scale-cv .courses__rounder {
+  width: 11px;
+  height: 11px;
+  margin-top: 0.22rem;
+}
+.scale-cv .education__line,
+.scale-cv .experience__line,
+.scale-cv .courses__line {
+  width: 1px;
+  height: 110%;
+  transform: translate(5px, 0);
+}
+.scale-cv .education__data,
+.scale-cv .experience__data,
+.scale-cv .courses__data {
+  gap: 0.25rem;
+}
+.scale-cv .interests__container,
+.scale-cv .skills_container_,
+.scale-cv .languages__container {
+  font-size: var(--small-font-size);
+}
+.scale-cv .home__section {
+  height: 100px;
+}
+/*========== Font size variables to scale cv ==========*/
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
+/*==== Бургер меню ====*/
 .nav__btn {
   position: absolute;
   right: 25px;

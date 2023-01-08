@@ -51,6 +51,7 @@
     <meta property="og:image:width" content="1000" />
     <meta property="og:image:height" content="524" />
     <meta property="og:url" content="https://resume-pishta.netlify.app/" />
+    <meta property="og:type" content="profile" />
     <meta property="og:title" content="Вас вітає Олександр" />
     <meta property="og:description" content="Все що ви хотіли знати про мене" />
     <meta name="author" content="Олександр Пішта" />
@@ -60,7 +61,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/print.css"
+      media="print" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/screen.css"
+      media="screen" />
     <title>Олександр Пішта</title>
   </head>
   <!-- Зменьшення шрифту scale-cv -->
@@ -222,72 +234,64 @@
             </div>
           </section>
           <!--========== LANGUAGES ==========-->
-          <section class="languages section" id="languages">
+          <section class="section" id="languages">
             <h2 class="section-title">МОВИ</h2>
-            <ul class="languages__content bd-grid">
-              <li>
+            <div class="languages__container bd-grid">
+              <div>
                 <span class="languages__circle"></span>Українська
-                <progress
-                  value="100"
-                  max="100"
-                  class="languages__progress"></progress>
-              </li>
-              <li>
-                <span class="languages__circle"></span>Російська
-                <progress
-                  value="100"
-                  max="100"
-                  class="languages__progress"></progress>
-              </li>
-              <li>
-                <span class="languages__circle"></span>Німецька
-                <progress
-                  value="20"
-                  max="100"
-                  class="languages__progress"></progress>
-              </li>
-              <li>
-                <span class="languages__circle"></span>Англійська
-                <progress
-                  value="5"
-                  max="100"
-                  class="languages__progress"></progress>
-              </li>
-            </ul>
+                <div class="languages__f-line">
+                  <div class="languages__line" style="width: 100%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Російська
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 100%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Німецька
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Англійська
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
           </section>
           <!--========== SKILLS  ==========-->
-          <section class="skills section" id="skills">
-            <h2 class="section-title">Скіли</h2>
-            <ul class="skills__content bd-grid">
-              <li>
+          <section class="section" id="skills">
+            <h2 class="section-title">СКІЛИ</h2>
+            <div class="skills__container bd-grid">
+              <div>
                 <span class="skills__circle"></span>Html
-                <progress
-                  value="90"
-                  max="100"
-                  class="skills__progress"></progress>
-              </li>
-              <li>
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
                 <span class="skills__circle"></span>Css
-                <progress
-                  value="80"
-                  max="100"
-                  class="skills__progress"></progress>
-              </li>
-              <li>
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
                 <span class="skills__circle"></span>JavaScript
-                <progress
-                  value="70"
-                  max="100"
-                  class="skills__progress"></progress>
-              </li>
-              <li>
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
                 <span class="skills__circle"></span>React
-                <progress
-                  value="60"
-                  max="100"
-                  class="skills__progress"></progress>
-              </li>
-            </ul>
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
           </section>
           <!--========== INTERESTS ==========-->
           <section class="section" id="interests">
@@ -392,7 +396,7 @@
                 </div>
                 <div class="education__data bd-grid">
                   <h3 class="education__title">Спеціаліст з фінансів</h3>
-                  <span class="education__studies"
+                  <span class="education__company"
                     >2000 - 2005 | Запорізька державна інженерна академія</span
                   >
                   <!-- <span class="education__year"></span> -->
@@ -401,7 +405,7 @@
             </div>
           </section>
           <!--========== COURSES ==========-->
-          <section class="courses section" id="courses">
+          <section class="section" id="courses">
             <h2 class="section-title">КУРСИ</h2>
             <div class="courses__container bd-grid">
               <div class="courses__content">
@@ -503,31 +507,45 @@
             </div>
           </section>
           <!--========== CERTIFICATES ==========-->
-          <section class="certificate section" id="certificates">
-            <h2 class="section-title">Сертифікати</h2>
+          <section class="certificate section" id="certificate">
+            <h2 class="section-title">СЕРТИФІКАТИ</h2>
             <div class="certificate__container bd-grid">
               <div class="certificate__content">
-                <h3 class="certificate__title">
-                  Cертифікат рівня цифрової грамотності середній В2
-                </h3>
-                <p class="certificate__description">
-                  2020 | Дія.Цифрова освіта
-                </p>
+                <div class="certificate__time">
+                  <span class="certificate__rounder"></span>
+                  <span class="certificate__line"></span>
+                </div>
+                <div class="certificate__data bd-grid">
+                  <h3 class="certificate__title">
+                    Cертифікат рівня цифрової грамотності середній В2
+                  </h3>
+                  <span class="courses__company"
+                    >2020 | Дія.Цифрова освіта
+                  </span>
+                  <!-- <p class="courses__description">
+                  </p> -->
+                </div>
               </div>
               <div class="certificate__content">
-                <h3 class="certificate__title">
-                  Посвідчення щодо вільного володіння державною мовою
-                </h3>
-                <p class="certificate__description">
-                  2019 | Запорізький національний університет
-                </p>
+                <div class="certificate__time">
+                  <span class="certificate__rounder"></span>
+                  <!-- <span class="certificate__line"></span> -->
+                </div>
+                <div class="certificate__data bd-grid">
+                  <h3 class="certificate__title">
+                    Посвідчення щодо вільного володіння державною мовою
+                  </h3>
+                  <span class="courses__company"
+                    >2019 | Запорізький національний університет</span
+                  >
+                  <!-- <p class="courses__description"></p> -->
+                </div>
               </div>
             </div>
           </section>
         </div>
       </div>
     </main>
-
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
