@@ -52,7 +52,8 @@
   }
   .education__time,
   .experience__time,
-  .courses__time {
+  .courses__time,
+  .certificate__time {
     padding-right: 0.5rem;
   }
   .education__rounder,
@@ -65,14 +66,16 @@
   }
   .education__line,
   .experience__line,
-  .courses__line {
+  .courses__line,
+  .certificate__line {
     width: 1px;
     height: 110%;
     transform: translate(5px, 0);
   }
   .education__data,
   .experience__data,
-  .courses__data {
+  .courses__data,
+  .certificate__data {
     gap: 0.25rem;
   }
   .interests__container,
