@@ -345,7 +345,7 @@ body.dark-theme {
   color: var(--title-color);
 }
 /*========== PROFILE ==========*/
-.profile__description {
+.about__description {
   text-align: center;
 }
 /*========== SOCIAL AND INTERESTS==========*/
