@@ -38,6 +38,38 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0 0 var(--header-height) 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: #f2f2f2;
@@ -135,7 +167,6 @@ body.dark-theme {
   justify-content: space-between;
   align-items: center;
 }
-/*========== NAV ==========*/
 @media screen and (max-width: 968px) {
   .nav__menu {
     position: fixed;
@@ -241,7 +272,6 @@ body.dark-theme {
 .burger.active {
   background: var(--container-color-alt);
 }
-
 /*========== HOME ==========*/
 .home {
   position: relative;
@@ -418,7 +448,8 @@ body.dark-theme {
 .education__title,
 .experience__title,
 .courses__title,
-.courses__title {
+.courses__title,
+.certificate__title {
   font-size: var(--h3-font-size);
 }
 .education__company,
@@ -429,10 +460,6 @@ body.dark-theme {
 }
 .education__year {
   font-size: var(--smaller-font-size);
-}
-.certificate__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
 }
 /* Scroll top */
 .scrolltop {
@@ -456,89 +483,4 @@ body.dark-theme {
 .show-scroll {
   visibility: visible;
   bottom: 5rem;
-}
-/*========== Classes modified to reduce size and print on A4 sheet ==========*/
-.scale-cv .chenge-theme,
-.scale-cv .generate-pdf {
-  display: none;
-}
-.scale-cv .bd-container {
-  max-width: 595px;
-}
-.scale-cv .section {
-  padding: 0.75rem 0 0rem;
-}
-.scale-cv .section-title {
-  margin-bottom: 0.75rem;
-}
-.scale-cv .resume__left,
-.scale-cv .resume__right {
-  padding: 0 1rem;
-}
-.scale-cv .home__img {
-  width: 100px;
-  height: 100px;
-}
-.scale-cv .home__container {
-  gap: 1.5rem;
-}
-.scale-cv .home__data {
-  gap: 0.25rem;
-}
-.scale-cv .home__address,
-.scale-cv .social__container,
-.scale-cv .interests__container,
-.scale-cv .languages__container,
-.scale-cv .skills__container,
-.scale-cv .education__container,
-.scale-cv .experience__container,
-.scale-cv .courses__container,
-.scale-cv .certificate__container {
-  gap: 0.7rem;
-}
-.scale-cv .home__icon,
-.scale-cv .social__icon,
-.scale-cv .interests__icon {
-  font-size: 1rem;
-}
-.scale-cv .education__time,
-.scale-cv .experience__time,
-.scale-cv .courses__time {
-  padding-right: 0.5rem;
-}
-.scale-cv .education__rounder,
-.scale-cv .experience__rounder,
-.scale-cv .courses__rounder {
-  width: 11px;
-  height: 11px;
-  margin-top: 0.22rem;
-}
-.scale-cv .education__line,
-.scale-cv .experience__line,
-.scale-cv .courses__line {
-  width: 1px;
-  height: 110%;
-  transform: translate(5px, 0);
-}
-.scale-cv .education__data,
-.scale-cv .experience__data,
-.scale-cv .courses__data {
-  gap: 0.25rem;
-}
-.scale-cv .interests__container,
-.scale-cv .skills_container_,
-.scale-cv .languages__container {
-  font-size: var(--small-font-size);
-}
-.scale-cv .home__section {
-  height: 100px;
-}
-/*========== Font size variables to scale cv ==========*/
-body.scale-cv {
-  --h1-font-size: 0.938rem;
-  --h2-font-size: 0.938rem;
-  --h3-font-size: 0.875rem;
-  --normal-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
-  --smaller-font-size: 0.688rem;
 }

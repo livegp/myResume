@@ -107,4 +107,11 @@
   .profile__description {
     text-align: initial;
   }
+  @page {
+    margin: 0.3cm;
+  }
+  /* Відображення ссилок */
+  /* a[href^="http"]:not([href*="mywebsite.com"]):after {
+    content: " (" attr(href) ")";
+  } */
 }

@@ -61,10 +61,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!--========== CSS ==========-->
-    <!-- Обнулення -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
     <!-- Загальний -->
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <!--====== toPDF ======-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/scaleToPDF.css" />
     <!-- Друк -->
     <link
       rel="stylesheet"
@@ -79,13 +79,13 @@
       media="screen" />
     <title>Олександр Пішта</title>
   </head>
-  <!-- Зменьшення шрифту scale-cv -->
+  <!-- Зменьшення шрифту   <body class="scale-cv"> -->
   <body>
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
         <div>
-          <a download="" href="/assets/pdf/Resume_Pishta.pdf">
+          <a download="Resume_Pishta" href="/assets/pdf/Resume_Pishta.pdf">
             <i class="bx bx-download home__button"></i>
           </a>
         </div>
@@ -256,13 +256,13 @@
               <div>
                 <span class="skills__circle"></span>Німецька
                 <div class="skills__f-line">
-                  <div class="skills__line" style="width: 70%"></div>
+                  <div class="skills__line" style="width: 15%"></div>
                 </div>
               </div>
               <div>
                 <span class="skills__circle"></span>Англійська
                 <div class="skills__f-line">
-                  <div class="skills__line" style="width: 60%"></div>
+                  <div class="skills__line" style="width: 5%"></div>
                 </div>
               </div>
             </div>
@@ -558,6 +558,5 @@
     <script src="/assets/js/html2pdf.bundle.min.js"></script>
     <!--========== MAIN JS ==========-->
     <script src="/assets/js/main.js"></script>
-    <!--========== Fontawesome ==========-->
   </body>
 </html>

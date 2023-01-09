@@ -27,6 +27,7 @@ document.querySelector(".nav__btn").addEventListener("click", function () {
 });
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", scrollActive);
 function scrollActive() {
   const scrollY = window.pageYOffset;
   sections.forEach((current) => {
@@ -44,7 +45,7 @@ function scrollActive() {
     }
   });
 }
-window.addEventListener("scroll", scrollActive);
+
 /*==================== SHOW SCROLL TOP ====================*/
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
